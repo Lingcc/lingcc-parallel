@@ -1,0 +1,29 @@
+#+title: MapReduce Related Tool Design and Implementation
+
+
+Except Hadoop MR streaming could be run on mutiple nodes, all the others can only run on a single shared-memory multicore node.
+
+
+* Hadoop MapReduce
+ We can use Hadoop MapReduce Streaming
+ 
+** Links
+   - [[http://hadoop.apache.org/docs/stable/streaming.html][Hadoop Streaming Introduction]]
+
+
+* Boost MapReduce 
+
+** Link
+   - [[https://github.com/cdmh/mapreduce][Project Home]]
+
+* Phoenix++
+
+** Link
+   - [[http://mapreduce.stanford.edu/][Project Home]]
+
+
+
+* MapReduce Lite
+
+** Link
+   - [[https://code.google.com/p/mapreduce-lite/][Project home page]]

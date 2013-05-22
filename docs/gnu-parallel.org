@@ -1,0 +1,14 @@
+#+title: GNU Parallel Design and Implementation
+
+
+* Introduction
+  GNU Parallel is a magic tools to help running applications or command in parallel.
+ 
+
+
+
+
+* Links
+  - GNU Parallel Home Page
+  - GNU Parallel Documents
+  - GNU Parallel Git Respository
