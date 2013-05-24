@@ -4,6 +4,31 @@
 Except Hadoop MR streaming could be run on mutiple nodes, all the others can only run on a single shared-memory multicore node.
 
 
+* The Simplest MR
+  just like: 
+
+#+BEGIN_SRC sh
+$cat data | map | sort |reduce
+
+# For example
+$ cat data | tr " " "\n" | sort | uniq -c 
+
+# For Hadoop
+$ $HADOOP_HOME/bin/hadoop -jar $HADOOP_HOME/hadoop-streaming.jar \
+     -input README.txt \
+     -output wordcount \
+     -mapper `tr " " "\n" ` \
+     -reducer 'uniq -c'
+#+END_SRC
+
+  It works as:
+  1. Mapper reads input data from stdin
+  2. Mapper writes output to stdout
+  3. Reducer receives input, sorted by key, on stdin
+  4. Reducer writes output to stdout
+
+
+
 * Hadoop MapReduce
 
 
